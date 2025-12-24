@@ -1,0 +1,187 @@
+
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+
+  grid:
+    columns: [32, 32, 32, 32, 90]
+    rows: [10, 10, 10, 4, 4, 90]
+
+  refreshInterval: 1
+
+  mods:
+
+    digitalclock:
+      enabled: true
+      type: digitalclock
+      title: "Clock"
+      font: bigfont
+      hourFormat: 24
+      withDatePrefix: true
+      color: white
+      refreshInterval: 1s
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+
+    clocks:
+      enabled: true
+      type: clocks
+      title: "World Clocks"
+      refreshInterval: 15
+      colors:
+        rows:
+          even: orange
+          odd: white
+      locations:
+        Philadelphia: "America/New_York"
+        Los Angeles: "America/Los_Angeles"
+        Beijing: "Asia/Shanghai"
+        New York: "America/New York"
+        Dubai: "Asia/Dubai"
+        US Central: "America/Menominee"
+        US Pheonix: "America/Phoenix"
+        Moscow: "Europe/Moscow"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+
+    ipinfo:
+      enabled: true
+      refreshInterval: 150
+      colors:
+        name: lightblue
+        value: white
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+
+    todo:
+      enabled: true
+      filename: "todo.yml"
+      checkedIcon: "X"
+      refreshInterval: 1h
+      colors:
+        checked: gray
+        highlight:
+          fore: black
+          back: orange
+      position:
+        top: 1
+        left: 0
+        height: 3
+        width: 1
+
+    hackernews:
+      enabled: true
+      storyType: top
+      numberOfStories: 18
+      refreshInterval: 15m
+      position:
+        top: 1
+        left: 1
+        height: 2
+        width: 2
+
+    subreddit_philadelphia:
+      enabled: true
+      type: subreddit
+      subreddit: philadelphia
+      sortOrder: top
+      topTimePeriod: day
+      numberOfPosts: 10
+      refreshInterval: 15m
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+
+    subreddit_dotnet:
+      enabled: true
+      type: subreddit
+      subreddit: dotnet
+      sortOrder: top
+      topTimePeriod: day
+      numberOfPosts: 10
+      refreshInterval: 15m
+      position:
+        top: 2
+        left: 3
+        height: 1
+        width: 1
+
+    subreddit_Philadelphia:
+      enabled: true
+      type: subreddit
+      subreddit: Philadelphia
+      sortOrder: top
+      topTimePeriod: day
+      numberOfPosts: 10
+      refreshInterval: 15m
+      position:
+        top: 1
+        left: 3
+        height: 1
+        width: 1
+        
+    uptime:
+      enabled: true
+      type: cmdrunner
+      cmd: uptime
+      refreshInterval: 30
+      position:
+        top: 3
+        left: 2
+        height: 1
+        width: 1
+
+    power:
+      enabled: true
+      title: "⚡ Power"
+      refreshInterval: 15
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 1
+
+    yfinance:
+      enabled: true
+      title: "Stocks & FX 🚀"
+      sort: true
+      refreshInterval: 1m
+      symbols:
+        - NVDA
+        - MSFT
+        - GOOGL
+        - QQQ
+        - VXUS
+        - USDRMB=X
+      position:
+        top: 3
+        left: 3
+        height: 3
+        width: 1
+
+    feedreader:
+      enabled: true
+      feeds:
+      - https://news.ycombinator.com/rss
+      - https://rss.cbc.ca/lineup/topstories.xml
+      feedLimit: 10
+      position:
+        top: 4
+        left: 0
+        height: 1
+        width: 3
+      refreshInterval: 4h
