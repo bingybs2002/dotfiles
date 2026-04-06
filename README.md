@@ -1,3 +1,3 @@
-# Dotfiles for CachyOS on 2023 Lenovo Legion 7i pro 16IRX8H.
-CachyOS with KDE plasma.
+# Various config files when I used elsewhere.
 
+Current setup is Windows 11, will go back to linux when the support for hybrid graphics is better.
