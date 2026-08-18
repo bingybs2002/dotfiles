@@ -1,0 +1,10 @@
+unbind C-b
+set -g prefix C-Space
+bind C-Space send-prefix
+
+set -g mouse on
+
+set -g base-index 1
+setw -g pane-base-index 1
+
+set -g renumber-windows on
