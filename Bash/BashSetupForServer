@@ -195,3 +195,10 @@ cleardir() {
     done
 }
 
+
+#tmux split screen vertically at start
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux new-session \; split-window -v
+fi
+
+
