@@ -1,3 +1,6 @@
-# Various config files when I used elsewhere.
+# CONFIG FILES
 
-Current setup is Windows 11, will go back to linux when the support for hybrid graphics is better.
+
+
+Mostly on Windows + WSL now, since Apex Legends got banned on Linux. 
+
